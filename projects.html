@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Work | Kei Endo Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #111111; --surface: #1a1a1a; --surface2: #222222; --border: #2e2e2e;
+    --accent: #e8632a; --white: #ffffff; --text: #e8e8e8; --muted: #b0b0b0; --muted2: #777777;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    background: rgba(17,17,17,0.97); backdrop-filter: blur(12px);
+    padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between;
+    height: 60px; border-bottom: 1px solid var(--border);
+  }
+  .nav-brand { color: var(--white); font-size: 1rem; font-weight: 800; text-decoration: none; letter-spacing: -0.02em; }
+  .nav-brand span { color: var(--accent); }
+  .nav-links { display: flex; gap: 0.2rem; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.82rem; font-weight: 500; padding: 0.35rem 0.75rem; border-radius: 6px; transition: all 0.18s; }
+  .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.06); }
+  .nav-links a.active { color: var(--white); }
+
+  .page-header { padding: 120px 2.5rem 3rem; border-bottom: 1px solid var(--border); }
+  .page-header-inner { max-width: 1100px; margin: 0 auto; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .page-label::before { content: ''; width: 1.5rem; height: 1px; background: var(--accent); display: block; }
+  .page-title { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--white); letter-spacing: -0.03em; line-height: 1.1; }
+  .page-title em { color: var(--accent); font-style: normal; }
+  .page-subtitle { color: var(--muted); font-size: 0.95rem; line-height: 1.75; font-weight: 300; margin-top: 1rem; max-width: 600px; }
+
+  .content { max-width: 1100px; margin: 0 auto; padding: 4rem 2.5rem; }
+
+  .project-card {
+    border: 1px solid var(--border); background: var(--surface); margin-bottom: 3rem;
+    transition: border-color 0.2s;
+  }
+  .project-card:hover { border-color: var(--accent); }
+
+  .project-header {
+    padding: 2rem 2.5rem 1.5rem; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+  }
+  .project-num { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 0.5rem; }
+  .project-title { font-size: 1.4rem; font-weight: 700; color: var(--white); letter-spacing: -0.02em; }
+  .project-course { font-size: 0.78rem; color: var(--muted2); font-weight: 500; margin-top: 0.3rem; }
+
+  .project-body { padding: 2rem 2.5rem; }
+
+  .project-section { margin-bottom: 1.8rem; }
+  .project-section:last-child { margin-bottom: 0; }
+  .project-section-label { font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 0.6rem; }
+  .project-section-text { color: var(--muted); font-size: 0.9rem; line-height: 1.85; font-weight: 300; }
+  .project-section-text strong { color: var(--text); font-weight: 500; }
+
+  .tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.8rem; }
+  .tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; border: 1px solid var(--border); color: var(--muted); padding: 0.35rem 0.9rem; border-radius: 99px; }
+
+  .project-link {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    color: var(--accent); font-size: 0.82rem; font-weight: 600; text-decoration: none;
+    margin-top: 0.8rem; transition: opacity 0.18s;
+  }
+  .project-link:hover { opacity: 0.8; }
+
+  .detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 1rem; }
+  .detail-cell { background: var(--surface2); padding: 1.2rem 1.4rem; }
+  .detail-label { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted2); font-weight: 700; margin-bottom: 0.3rem; }
+  .detail-value { font-size: 0.85rem; color: var(--white); font-weight: 500; }
+
+  footer { border-top: 1px solid var(--border); padding: 1.8rem 2.5rem; display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 0.76rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+  .footer-right { display: flex; gap: 1.5rem; }
+  .footer-nav { display: flex; justify-content: space-between; max-width: 1100px; margin: 2rem auto 0; padding: 0 2.5rem; }
+  .footer-nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+
+  .fade-in { opacity: 0; transform: translateY(14px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  @media(max-width:768px) {
+    nav { padding: 0 1rem; }
+    .nav-links a { font-size: 0.72rem; padding: 0.3rem 0.5rem; }
+    .project-header { padding: 1.5rem; }
+    .project-body { padding: 1.5rem; }
+    .detail-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-brand" href="index.html">Kei Endo<span>.</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="pplg.html">Goals</a>
+    <a href="projects.html" class="active">Project Work</a>
+    <a href="cv.html">CV</a>
+    <a href="reflections.html">Reflections</a>
+    <a href="peer.html">Peer Review</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-label">Portfolio &middot; Projects</div>
+    <h1 class="page-title">Project <em>Work</em></h1>
+    <p class="page-subtitle">Examples of coursework and projects that demonstrate my analytical and professional capabilities.</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- PROJECT 01 -->
+  <div class="project-card fade-in">
+    <div class="project-header">
+      <div>
+        <div class="project-num">Portfolio 01</div>
+        <div class="project-title">Cafe Sales Analysis Dashboard</div>
+        <div class="project-course">Data Analytics &middot; ICL</div>
+      </div>
+    </div>
+    <div class="project-body">
+
+      <div class="project-section">
+        <div class="project-section-label">Context</div>
+        <p class="project-section-text">As part of developing my data analytics skills at ICL, I undertook an independent project to analyse caf&eacute; sales data and build a visual dashboard that could support business decision-making in a real hospitality environment.</p>
+      </div>
+
+      <div class="project-section">
+        <div class="project-section-label">Objective</div>
+        <p class="project-section-text">Build an interactive dashboard that visualises <strong>monthly sales trends</strong>, <strong>menu item performance</strong>, and <strong>peak trading hours</strong> &mdash; providing actionable insights for caf&eacute; management.</p>
+      </div>
+
+      <div class="project-section">
+        <div class="project-section-label">My Role &amp; Approach</div>
+        <p class="project-section-text">I was solely responsible for data sourcing, cleaning, analysis, and dashboard design. I collected and organised raw sales data, created pivot tables to identify patterns, and designed visual charts including monthly sales trends, menu breakdown by category, and peak hour analysis. I focused on making the dashboard <strong>intuitive and easy to read</strong> for non-technical stakeholders.</p>
+      </div>
+
+      <div class="project-section">
+        <div class="project-section-label">Outcome</div>
+        <p class="project-section-text">The dashboard clearly revealed that <strong>weekday mornings</strong> were the highest-revenue periods and that certain menu items significantly outperformed others. This kind of analysis can help caf&eacute; managers optimise staffing, inventory, and promotional strategies.</p>
+      </div>
+
+      <div class="detail-grid">
+        <div class="detail-cell">
+          <div class="detail-label">Tools</div>
+          <div class="detail-value">Excel &middot; Pivot Tables</div>
+        </div>
+        <div class="detail-cell">
+          <div class="detail-label">Skills</div>
+          <div class="detail-value">Data Visualisation &middot; Analysis</div>
+        </div>
+        <div class="detail-cell">
+          <div class="detail-label">Type</div>
+          <div class="detail-value">Independent Project</div>
+        </div>
+      </div>
+
+      <a href="https://github.com/Keeeeeeeeei79/cafe-sales-analysis" target="_blank" class="project-link">View on GitHub &rarr;</a>
+    </div>
+  </div>
+
+  <!-- PROJECT 02 -->
+  <div class="project-card fade-in">
+    <div class="project-header">
+      <div>
+        <div class="project-num">Portfolio 02</div>
+        <div class="project-title">Xero Organisational Behaviour Essay</div>
+        <div class="project-course">Contemporary Leadership &amp; Management (9230) &middot; ICL</div>
+      </div>
+    </div>
+    <div class="project-body">
+
+      <div class="project-section">
+        <div class="project-section-label">Context</div>
+        <p class="project-section-text">For the Contemporary Leadership and Management course at ICL, I was required to critically analyse a real organisation's behaviour, culture, and change management approach using established academic frameworks.</p>
+      </div>
+
+      <div class="project-section">
+        <div class="project-section-label">Objective</div>
+        <p class="project-section-text">Evaluate <strong>Xero's organisational culture</strong>, employee motivation strategies, and approach to managing change &mdash; linking analysis to relevant management theories.</p>
+      </div>
+
+      <div class="project-section">
+        <div class="project-section-label">My Role &amp; Approach</div>
+        <p class="project-section-text">This was an individual research and academic writing assignment. I applied the <strong>AMO Theory</strong> (Ability, Motivation, Opportunity) to analyse how Xero empowers its employees through skills development, intrinsic motivation, and a culture of innovation. I also used <strong>Kotter's 8-Step Change Model</strong> to evaluate how Xero managed its transition from a local New Zealand accounting software company to a global SaaS platform, examining leadership communication, coalition building, and the embedding of new organisational practices.</p>
+      </div>
+
+      <div class="project-section">
+        <div class="project-section-label">Outcome</div>
+        <p class="project-section-text">The essay demonstrated that Xero's success is largely attributable to its <strong>people-centred culture</strong> and <strong>structured approach to organisational change</strong>. I received strong feedback for effectively linking theory to real-world business practice.</p>
+      </div>
+
+      <div class="detail-grid">
+        <div class="detail-cell">
+          <div class="detail-label">Framework</div>
+          <div class="detail-value">AMO Theory</div>
+        </div>
+        <div class="detail-cell">
+          <div class="detail-label">Model</div>
+          <div class="detail-value">Kotter 8-Step</div>
+        </div>
+        <div class="detail-cell">
+          <div class="detail-label">Type</div>
+          <div class="detail-value">Academic Essay</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="footer-nav">
+  <a href="pplg.html">&larr; Goals</a>
+  <a href="cv.html">CV &rarr;</a>
+</div>
+
+<footer>
+  <span>Kei Endo &middot; ICL Professional Portfolio &middot; 2026</span>
+  <div class="footer-right"><a href="about.html">About</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(()=>e.target.classList.add('visible'),i*150); });
+  },{threshold:0.08});
+  document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
