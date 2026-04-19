@@ -25,7 +25,7 @@
   .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.78rem; font-weight: 500; padding: 0.35rem 0.75rem; border-radius: 6px; transition: all 0.18s; }
   .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.06); }
   .nav-links a.active { color: var(--white); }
-
+ 
   .page-header { padding: 120px 2.5rem 3rem; border-bottom: 1px solid var(--border); }
   .page-header-inner { max-width: 1100px; margin: 0 auto; }
   .page-label { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
@@ -33,9 +33,9 @@
   .page-title { font-family: 'Syne', sans-serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--white); letter-spacing: -0.03em; line-height: 1.1; }
   .page-title em { color: var(--accent); font-style: normal; }
   .page-subtitle { color: var(--muted); font-size: 0.95rem; line-height: 1.75; font-weight: 300; margin-top: 1rem; max-width: 550px; }
-
+ 
   .content { max-width: 1100px; margin: 0 auto; padding: 4rem 2.5rem; }
-
+ 
   .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
   .contact-card {
     background: var(--surface); padding: 2.5rem 2rem; text-decoration: none; color: inherit;
@@ -52,21 +52,21 @@
   .contact-type { font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted2); font-weight: 700; }
   .contact-value { font-size: 1rem; color: var(--white); font-weight: 600; word-break: break-all; }
   .contact-action { font-size: 0.75rem; color: var(--accent); font-weight: 500; margin-top: 0.3rem; }
-
+ 
   .contact-note {
     margin-top: 3rem; padding: 2rem; border: 1px solid var(--border); background: var(--surface);
     text-align: center;
   }
   .contact-note p { color: var(--muted); font-size: 0.85rem; line-height: 1.7; font-weight: 300; }
   .contact-note strong { color: var(--text); font-weight: 500; }
-
+ 
   footer { border-top: 1px solid var(--border); padding: 1.8rem 2.5rem; display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 0.76rem; }
   footer a { color: var(--accent); text-decoration: none; }
   .footer-right { display: flex; gap: 1.5rem; }
-
+ 
   .fade-in { opacity: 0; transform: translateY(14px); transition: opacity 0.5s ease, transform 0.5s ease; }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
-
+ 
   @media(max-width:768px) {
     .contact-grid { grid-template-columns: 1fr; }
     nav { padding: 0 1rem; }
@@ -88,7 +88,7 @@
     <a href="contact.html" class="active">Contact</a>
   </div>
 </nav>
-
+ 
 <div class="page-header">
   <div class="page-header-inner">
     <div class="page-label">Portfolio · Connect</div>
@@ -96,7 +96,7 @@
     <p class="page-subtitle">Feel free to reach out via phone, email, or LinkedIn. I'm always open to connecting with new people and exploring opportunities.</p>
   </div>
 </div>
-
+ 
 <div class="content">
   <div class="contact-grid fade-in">
     <a href="tel:0274605847" class="contact-card">
@@ -105,10 +105,10 @@
       <div class="contact-value">027 460 5847</div>
       <div class="contact-action">Tap to call →</div>
     </a>
-    <a href="/cdn-cgi/l/email-protection#b4858783868485869adfd1ddf4d3d9d5ddd89ad7dbd9" class="contact-card">
+    <a href="mailto:1372012.kei@gmail.com" class="contact-card">
       <div class="contact-icon">✉️</div>
       <div class="contact-type">Email</div>
-      <div class="contact-value"><span class="__cf_email__" data-cfemail="80b1b3b7b2b0b1b2aeebe5e9c0e7ede1e9ecaee3efed">[email&#160;protected]</span></div>
+      <div class="contact-value">1372012.kei@gmail.com</div>
       <div class="contact-action">Send an email →</div>
     </a>
     <a href="https://www.linkedin.com/in/kei-endo-4196183b9/" target="_blank" class="contact-card">
@@ -118,18 +118,18 @@
       <div class="contact-action">View profile →</div>
     </a>
   </div>
-
+ 
   <div class="contact-note fade-in">
     <p>Based in <strong>Auckland, New Zealand</strong>. Currently studying at <strong>ICL</strong> and working as a barista. Open to conversations about <strong>data analytics</strong>, <strong>marketing</strong>, and career opportunities.</p>
   </div>
 </div>
-
+ 
 <footer>
   <span>Kei Endo · ICL Professional Portfolio · Auckland · 2026</span>
   <div class="footer-right"><a href="about.html">About Me</a><a href="projects.html">Project Work</a>
     <a href="cv.html">CV</a><a href="contact.html" class="active">Contact</a></div>
 </footer>
-
+ 
 <script>
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -138,6 +138,7 @@
       }
     });
   }, { threshold: 0.1 });
-
+ 
   document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 </script>
+ 
