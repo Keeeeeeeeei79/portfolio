@@ -15,7 +15,6 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.97);b
 .nav-links a{color:var(--muted);text-decoration:none;font-size:0.78rem;font-weight:500;padding:0.35rem 0.75rem;border-radius:6px;transition:all 0.18s;}
 .nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.06);}
 .nav-links a.active{color:var(--white);}
-
 .page-hero{background:var(--surface);padding:100px 2.5rem 3rem;border-bottom:1px solid var(--border);}
 .page-hero-inner{max-width:900px;margin:0 auto;}
 .breadcrumb{font-size:0.72rem;color:var(--muted2);margin-bottom:1rem;}
@@ -24,7 +23,6 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.97);b
 .page-hero h1{font-family:'Inter',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;color:var(--white);letter-spacing:-0.03em;line-height:1.05;margin-bottom:0.8rem;}
 .page-hero h1 em{color:var(--accent);font-style:normal;}
 .page-hero p{color:var(--muted);font-size:0.9rem;line-height:1.7;font-weight:300;}
-
 .content{max-width:900px;margin:0 auto;padding:3.5rem 2.5rem 6rem;}
 
 /* FEEDBACK SUMMARY , 4-column like the reference */
@@ -55,117 +53,128 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.97);b
 footer{border-top:1px solid var(--border);padding:1.8rem 2.5rem;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:0.76rem;}
 footer a{color:var(--accent);text-decoration:none;}
 .footer-right{display:flex;gap:1.5rem;}
+
 .fade-in{opacity:0;transform:translateY(14px);transition:opacity 0.5s ease,transform 0.5s ease;}
 .fade-in.visible{opacity:1;transform:translateY(0);}
+
 @media(max-width:768px){.feedback-grid{grid-template-columns:repeat(2,1fr);} .action-grid{grid-template-columns:1fr;} nav{padding:0 1rem;} .nav-links a{font-size:0.72rem;padding:0.3rem 0.5rem;}}
 </style>
 </head>
 <body>
+
 <nav>
-  <a class="nav-brand" href="index.html">Kei Endo<span>.</span></a>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="pplg.html">Goals</a>
-    <a href="projects.html">Project Work</a>
-    <a href="cv.html">CV</a>
-    <a href="reflections.html">Reflections</a>
-    <a href="peer.html" class="active">Peer Review</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<a class="nav-brand" href="index.html">Kei Endo<span>.</span></a>
+<div class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="pplg.html">Goals</a>
+  <a href="projects.html">Project Work</a>
+  <a href="cv.html">CV</a>
+  <a href="reflections.html">Reflections</a>
+  <a href="peer.html" class="active">Peer Review</a>
+  <a href="contact.html">Contact</a>
+</div>
 </nav>
 
 <div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="breadcrumb">
+<div class="page-hero-inner">
+  <div class="breadcrumb">
     <a href="index.html">Home</a> / Reflective Learning</div>
-    <div class="badge">Portfolio</div>
-    <h1>Peer <em>Evaluation</em></h1>
-    <p>Feedback received from <strong style="color:var(--white);">Minghong Zhang</strong>, ICL classmate , reflecting on the design, structure, and content of my ePortfolio.</p>
-  </div>
+  <div class="badge">Portfolio</div>
+  <h1>Peer <em>Evaluation</em></h1>
+  <p>Feedback received from <strong style="color:var(--white);">Minghong Zhang</strong>, ICL classmate, reflecting on the design, structure, and content of my ePortfolio.</p>
+</div>
 </div>
 
 <div class="content">
 
-  <!-- FEEDBACK SUMMARY GRID -->
-  <div class="feedback-grid fade-in">
-    <div class="fb-cell">
-      <div class="fb-icon">✅</div>
-      <div class="fb-label">Strength</div>
-      <div class="fb-heading">Portfolio Design</div>
-      <div class="fb-body">Clean, professional dark-themed layout with excellent visual hierarchy and consistent styling across all pages.</div>
-    </div>
-    <div class="fb-cell">
-      <div class="fb-icon">✅</div>
-      <div class="fb-label">Strength</div>
-      <div class="fb-heading">Content Structure</div>
-      <div class="fb-body">Well-organised sections that guide the reader through a clear narrative from background to future goals.</div>
-    </div>
-    <div class="fb-cell">
-      <div class="fb-icon">✅</div>
-      <div class="fb-label">Strength</div>
-      <div class="fb-heading">Personal Branding</div>
-      <div class="fb-body">Strong personal story connecting physiotherapy background to data analytics ambitions in a compelling way.</div>
-    </div>
-    <div class="fb-cell">
-      <div class="fb-icon">📈</div>
-      <div class="fb-label">Suggestion</div>
-      <div class="fb-heading">More Examples</div>
-      <div class="fb-body">Could include more specific project examples or data work samples to strengthen the portfolio further.</div>
-    </div>
+<!-- FEEDBACK SUMMARY GRID -->
+<div class="feedback-grid fade-in">
+  <div class="fb-cell">
+    <div class="fb-icon">✅</div>
+    <div class="fb-label">Strength</div>
+    <div class="fb-heading">Beautiful Design</div>
+    <div class="fb-body">Dark, clean, professional and modern layout with consistent styling and thoughtful aesthetics across every page.</div>
   </div>
-
-  <!-- POST -->
-  <div class="post-card fade-in">
-    <div class="post-header">
-      <div class="post-course">Peer Evaluation · Reviewed by Minghong Zhang</div>
-      <div class="post-title">Peer Review: A Well-Structured and Visually Cohesive Portfolio</div>
-    </div>
-    <div class="post-body">
-      <p>"Kei's portfolio immediately stands out with its clean, dark-themed design. The layout is professional and modern, and every page follows a consistent visual style. It's clear that a lot of thought has gone into both the aesthetics and the user experience , the navigation is intuitive, and the content flows naturally from one section to the next."</p>
-      <p>"What I found most impressive is how Kei has connected his diverse background , from physiotherapy in Japan to barista work in Auckland , into a cohesive career narrative. Rather than presenting these as disconnected experiences, the portfolio tells a story of someone who is intentionally building towards a career in data analytics, bringing transferable skills from every stage of his journey."</p>
-      <p>"The reflective journals are thoughtful and demonstrate genuine self-awareness. Kei doesn't just describe what he learned , he explains how those learnings have changed the way he thinks and works. The section on teamwork and cross-cultural communication was particularly strong, as it drew on real experiences rather than just theory."</p>
-      <p>"The CV is well-formatted and clearly presents his qualifications and experience. The learning goals section shows a structured approach to professional development, with specific, measurable objectives that demonstrate forward planning."</p>
-      <p>"If I had one suggestion, it would be to include some concrete examples of data analytics work or projects as the portfolio develops. Even small examples , a visualisation, a dataset analysis, or a case study , would add another dimension and show his technical capabilities alongside the strong reflective and professional content that is already there."</p>
-      <p>"Overall, Kei's portfolio is one of the most polished and well-organised ePortfolios I've seen in our cohort. It reflects both professionalism and personality, and it's clear that he takes his career development seriously."</p>
-      <p style="color: var(--white); font-weight: 500; margin-top: 1.5rem;">Minghong Zhang, ICL Classmate</p>
-    </div>
+  <div class="fb-cell">
+    <div class="fb-icon">✅</div>
+    <div class="fb-label">Strength</div>
+    <div class="fb-heading">Coherent Narrative</div>
+    <div class="fb-body">Diverse experiences from physiotherapy to barista work woven into an intentional and compelling career story toward data analytics.</div>
   </div>
-
-  <hr class="section-divider">
-
-  <!-- ACTIONS TAKEN -->
-  <div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--accent);font-weight:700;margin-bottom:1rem;" class="fade-in">My Response & Next Steps</div>
-  <div class="action-grid fade-in">
-    <div class="action-cell">
-      <div class="action-num">01</div>
-      <div class="action-text">Continue refining the visual design and consistency across all portfolio pages, maintaining the professional standard Minghong highlighted.</div>
-    </div>
-    <div class="action-cell">
-      <div class="action-num">02</div>
-      <div class="action-text">Add concrete data analytics project examples as I develop my technical skills , visualisations, case studies, and dataset analyses.</div>
-    </div>
-    <div class="action-cell">
-      <div class="action-num">03</div>
-      <div class="action-text">Keep strengthening the connection between my diverse career experiences and my future goals in data analytics throughout the portfolio.</div>
-    </div>
-    <div class="action-cell">
-      <div class="action-num">04</div>
-      <div class="action-text">Regularly seek peer feedback and treat the portfolio as a living document that evolves with my professional development.</div>
-    </div>
+  <div class="fb-cell">
+    <div class="fb-icon">✅</div>
+    <div class="fb-label">Strength</div>
+    <div class="fb-heading">Reflective Depth</div>
+    <div class="fb-body">Thoughtful journals demonstrating genuine self-awareness, with strong cross-cultural communication insights grounded in real experience.</div>
   </div>
+  <div class="fb-cell">
+    <div class="fb-icon">📈</div>
+    <div class="fb-label">Suggestion</div>
+    <div class="fb-heading">Technical Examples</div>
+    <div class="fb-body">Include real-world data analytics projects or work samples to demonstrate technical competency alongside the reflective content.</div>
+  </div>
+</div>
+
+<!-- POST -->
+<div class="post-card fade-in">
+  <div class="post-header">
+    <div class="post-course">Peer Evaluation · Reviewed by Minghong Zhang</div>
+    <div class="post-title">Peer Review: One of the Most Professionalised ePortfolios in Our Group</div>
+  </div>
+  <div class="post-body">
+    <p>"What immediately strikes about the portfolio of Kei is that it has been designed beautifully with its dark and clean design, the design is professional and modern and every page has a similar stylistic appearance. It is also obvious that much consideration has been given to the aesthetics and the user experience, the user is guided by the intuitive navigation and the content flows naturally one page to another."</p>
+
+    <p>"What impressed me the most is how Kei has made the various experiences he has had, working as a physiotherapist in Japan and a barista in Auckland, into a coherent career narrative. It is not that he is trying to make these experiences seem unrelated to each other, but instead the portfolio shows the viewer a well-planned, personalized, and intentional way to a career in data analytics."</p>
+
+    <p>"The reflective journals are well considered and reflect a true sense of self-awareness. Kei does not merely recount what he did learn, he elaborates on how the learnings have transformed his thinking and approaches to working with colleagues and different cultures. The teamwork and cross cultural communication section was especially good as it is based on actual experiences and not mere theory."</p>
+
+    <p>"The CV is properly formatted and clearly displays his qualifications and experience, the learning goals section indicates that he has a systematic approach to his professional development, which has clearly defined, measurable goals indicating forward planning."</p>
+
+    <p>"The only thing I would recommend, as the portfolio evolves, is to put some real-world examples of the data analytics work or projects in place, as it would add a new layer and demonstrate his technical competency, in addition to the already well-developed reflective and professional material."</p>
+
+    <p>"On balance, the portfolio of Kei is one of the most professionalised and best organised ePortfolios I have ever viewed within our group. It is professional and personal and it is obvious that Kei does not underestimate his career development."</p>
+
+    <p style="color: var(--white); font-weight: 500; margin-top: 1.5rem;">Minghong Zhang, ICL Classmate</p>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ACTIONS TAKEN -->
+<div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--accent);font-weight:700;margin-bottom:1rem;" class="fade-in">My Response & Next Steps</div>
+
+<div class="action-grid fade-in">
+  <div class="action-cell">
+    <div class="action-num">01</div>
+    <div class="action-text">Continue refining the visual design and consistency across all portfolio pages, maintaining the professional standard Minghong highlighted.</div>
+  </div>
+  <div class="action-cell">
+    <div class="action-num">02</div>
+    <div class="action-text">Add concrete data analytics project examples as I develop my technical skills — visualisations, case studies, and dataset analyses.</div>
+  </div>
+  <div class="action-cell">
+    <div class="action-num">03</div>
+    <div class="action-text">Keep strengthening the connection between my diverse career experiences and my future goals in data analytics throughout the portfolio.</div>
+  </div>
+  <div class="action-cell">
+    <div class="action-num">04</div>
+    <div class="action-text">Regularly seek peer feedback and treat the portfolio as a living document that evolves with my professional development.</div>
+  </div>
+</div>
 
 </div>
 
 <footer>
-  <span>Kei Endo · ICL Professional Portfolio · 2026</span>
-  <div class="footer-right"><a href="reflections.html">← Journals</a>
-    <a href="index.html">Home</a></div>
+<span>Kei Endo · ICL Professional Portfolio · 2026</span>
+<div class="footer-right"><a href="reflections.html">← Journals</a>
+  <a href="index.html">Home</a></div>
 </footer>
 
 <script>
-  const obs=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*100);});},{threshold:0.05});
-  document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+const obs=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*100);});},{threshold:0.05});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 </script>
+
 </body>
 </html>
