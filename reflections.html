@@ -15,7 +15,6 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.97);b
 .nav-links a{color:var(--muted);text-decoration:none;font-size:0.78rem;font-weight:500;padding:0.35rem 0.75rem;border-radius:6px;transition:all 0.18s;}
 .nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.06);}
 .nav-links a.active{color:var(--white);}
-
 .page-hero{background:var(--surface);padding:100px 2.5rem 3rem;border-bottom:1px solid var(--border);}
 .page-hero-inner{max-width:1100px;margin:0 auto;}
 .breadcrumb{font-size:0.72rem;color:var(--muted2);margin-bottom:1rem;}
@@ -24,13 +23,10 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.97);b
 .page-hero h1{font-family:'Inter',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;color:var(--white);letter-spacing:-0.03em;line-height:1.05;margin-bottom:0.8rem;}
 .page-hero h1 em{color:var(--accent);font-style:normal;}
 .page-hero p{color:var(--muted);font-size:0.9rem;line-height:1.7;font-weight:300;}
-
 .content{max-width:1100px;margin:0 auto;padding:3.5rem 2.5rem 6rem;}
-
 /* PORTFOLIO CARD , like the reference screenshots */
 .post-card{background:var(--surface);border:1px solid var(--border);margin-bottom:1px;}
 .post-card:first-child{border-top:1px solid var(--border);}
-
 .post-header{padding:1.8rem 2.2rem;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:1.5rem;}
 .post-number{font-family:'Inter',sans-serif;font-size:2rem;font-weight:800;color:var(--muted2);line-height:1;flex-shrink:0;width:3rem;}
 .post-number em{font-style:normal;color:var(--accent);}
@@ -39,14 +35,12 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.97);b
 .post-title{font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:800;color:var(--white);letter-spacing:-0.02em;line-height:1.2;}
 .post-tags{display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.6rem;}
 .post-tag{font-size:0.6rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border:1px solid var(--border);color:var(--muted2);padding:0.15rem 0.5rem;border-radius:2px;}
-
 /* THREE-COLUMN LAYOUT , Challenge / Approach / Outcome */
 .cao-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-top:1px solid var(--border);}
 .cao-cell{background:var(--surface);padding:1.5rem 1.8rem;}
 .cao-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);font-weight:700;margin-bottom:0.5rem;}
 .cao-heading{font-size:0.9rem;font-weight:600;color:var(--white);margin-bottom:0.4rem;}
 .cao-body{font-size:0.8rem;color:var(--muted);line-height:1.6;font-weight:300;}
-
 /* FULL TEXT BODY */
 .post-body{padding:1.8rem 2.2rem;border-top:1px solid var(--border);}
 .post-body p{font-size:0.87rem;color:var(--muted);line-height:1.78;margin-bottom:0.9rem;font-weight:300;}
@@ -55,7 +49,6 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.97);b
 .toggle-btn:hover{border-color:var(--accent);color:var(--accent);}
 .full-text{display:none;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
 .full-text.open{display:block;}
-
 footer{border-top:1px solid var(--border);padding:1.8rem 2.5rem;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:0.76rem;}
 footer a{color:var(--accent);text-decoration:none;}
 .footer-right{display:flex;gap:1.5rem;}
@@ -66,237 +59,226 @@ footer a{color:var(--accent);text-decoration:none;}
 </head>
 <body>
 <nav>
-  <a class="nav-brand" href="index.html">Kei Endo<span>.</span></a>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="pplg.html">Goals</a>
-    <a href="projects.html">Project Work</a>
-    <a href="cv.html">CV</a>
-    <a href="reflections.html" class="active">Reflections</a>
-    <a href="peer.html">Peer Review</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<a class="nav-brand" href="index.html">Kei Endo<span>.</span></a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="pplg.html">Goals</a>
+<a href="projects.html">Project Work</a>
+<a href="cv.html">CV</a>
+<a href="reflections.html" class="active">Reflections</a>
+<a href="peer.html">Peer Review</a>
+<a href="contact.html">Contact</a>
+</div>
 </nav>
-
 <div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="breadcrumb">
-    <a href="index.html">Home</a> / Reflective Learning</div>
-    <div class="badge">Portfolio</div>
-    <h1>Reflective <em>Journals</em></h1>
-    <p>Five posts reflecting on specific learnings from ICL courses , what I learned, how it was useful, and how I applied it in a real-world context.</p>
-  </div>
+<div class="page-hero-inner">
+<div class="breadcrumb">
+<a href="index.html">Home</a> / Reflective Learning</div>
+<div class="badge">Portfolio</div>
+<h1>Reflective <em>Journals</em></h1>
+<p>Five posts reflecting on specific learnings from ICL courses , what I learned, how it was useful, and how I applied it in a real-world context.</p>
 </div>
-
+</div>
 <div class="content">
-
-  <!-- POST 1 -->
-  <div class="post-card fade-in" id="post1">
-    <div class="post-header">
-      <div class="post-number">0<em>1</em></div>
-      <div class="post-meta">
-        <div class="post-course">ICL 9230 · Contemporary Leadership and Management</div>
-        <div class="post-title">Understanding Leadership Theories and Their Real-World Application</div>
-        <div class="post-tags"><span class="post-tag">Transformational Leadership</span><span class="post-tag">Situational Leadership</span><span class="post-tag">Workplace Practice</span></div>
-      </div>
-    </div>
-    <div class="cao-row">
-      <div class="cao-cell">
-        <div class="cao-label">Learning</div>
-        <div class="cao-heading">Leadership Theories</div>
-        <div class="cao-body">Transformational & situational leadership frameworks studied in ICL 9230.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Application</div>
-        <div class="cao-heading">Café Team Management</div>
-        <div class="cao-body">Adjusting leadership style based on team member experience and readiness in day-to-day work.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Outcome</div>
-        <div class="cao-heading">Conscious Leadership Skills</div>
-        <div class="cao-body">Improved team communication and a deliberate, theory-informed approach to working with others.</div>
-      </div>
-    </div>
-    <div class="post-body">
-      <button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
-      <div class="full-text">
-        <p>Among the most significant things I have learned throughout the ICL Leading and Management course is the analysis of the main theories of leadership, especially, transformational and situational leadership. Prior to this course, I had seen the action of leadership over the years, as I worked as a physiotherapist in Japan, but I never had a formal structure on which to base my observations of why certain leaders were more successful than others, or how the style of leadership could be purposefully changed.</p>
-        <p>During the course, we examined the ways transformational leaders can inspire people by referencing to shared values and inspiring a common vision, as well as how situational leaders can modify their approach to the capabilities and readiness of every team member. This difference spoke to my heart. In retrospect, my experience in the clinical career, I would now be able to have a list of leaders I had like or disliked and realize through these models why some forms of management were better or worse in one or another circumstance.
-</p>
-        <p>The particular aspect of this learning that was particularly helpful was that it could be applied to my present-day workplace in Auckland right away. As a cafe employee, I started to actively use the situational leadership principles: the new team members should be offered more guidance and structure, whereas more experienced employees could be given more freedom. I observed that this strategy enhanced communication and minimized frustrations within the team when there was a rush of business.</p>
-        <p>I intend to keep using these theories in the future since I will be in business settings. Knowing leadership conceptually, and having the capacity to introspect and change style, is not only pertinent to managers, but to anyone who has aspirations of making a significant contribution to an organisation. This has influenced my future career thoughts where I will be in the field of marketing and data analytics where in most cases it is necessary to influence others without having official power.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- POST 2 -->
-  <div class="post-card fade-in" id="post2">
-    <div class="post-header">
-      <div class="post-number">0<em>2</em></div>
-      <div class="post-meta">
-        <div class="post-course">ICL 9230 · Contemporary Leadership and Management</div>
-        <div class="post-title">The Importance of Communication in Cross-Cultural Teams</div>
-        <div class="post-tags"><span class="post-tag">Cross-cultural Communication</span><span class="post-tag">High/Low Context</span><span class="post-tag">Professional Adaptation</span></div>
-      </div>
-    </div>
-    <div class="cao-row">
-      <div class="cao-cell">
-        <div class="cao-label">Learning</div>
-        <div class="cao-heading">Communication Styles</div>
-        <div class="cao-body">High vs. low-context cultural communication models and how they create misunderstanding in diverse teams.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Application</div>
-        <div class="cao-heading">NZ Workplace Adaptation</div>
-        <div class="cao-body">More direct, explicit communication in English professional settings rather than relying on implicit cues.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Outcome</div>
-        <div class="cao-heading">Improved Team Relationships</div>
-        <div class="cao-body">Better professional relationships and greater empathy toward colleagues from other cultural backgrounds.</div>
-      </div>
-    </div>
-    <div class="post-body">
-      <button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
-      <div class="full-text">
-        <p> The importance of communication, and the cross-cultural communication in particular in the efficient team management was another important lesson that I gained during my ICL studies. During the Leading and Management course, we explored how various communication styles, either high or low context, direct or indirect communication may cause misunderstanding in various teams.</p>
-        <p>This touched me personally as a Japanese professional working and living in New Zealand. As a high-context cultural background, and therefore one in which very little is said and a lot is implied, I was initially challenged by the more direct manner of communication in New Zealand. The course provided me with a language and a structure to interpret those differences not as lacks, but as different cultural norms that must be identified and closed the gap between them.</p>
-        <p>Practically, this learning was beneficial to me at work. I was more conscious of making my thoughts clear and explicit, instead of insinuating or remaining silent in order to not cause a commotion, which is typical of the Japanese work culture. I also learned to be more understanding of other colleagues who may have a different cultural background and may have the same adjustment issues.</p>
-        <p>I consider it a very essential skill in my future career. Working in data analytics and marketing in New Zealand, I will engage with different teams on a regular basis and convey complicated information to the stakeholders with different levels of technical expertise. I am also in the process of developing the competency of adjusting my communication style in response to various audiences, and this course provided me with a solid conceptual framework with which to accomplish it.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- POST 3 -->
-  <div class="post-card fade-in" id="post3">
-    <div class="post-header">
-      <div class="post-number">0<em>3</em></div>
-      <div class="post-meta">
-        <div class="post-course">ICL Studies · Academic & Personal Development</div>
-        <div class="post-title">Goal-Setting and Strategic Thinking</div>
-        <div class="post-tags"><span class="post-tag">SMART Goals</span><span class="post-tag">Career Planning</span><span class="post-tag">Strategic Thinking</span></div>
-      </div>
-    </div>
-    <div class="cao-row">
-      <div class="cao-cell">
-        <div class="cao-label">Learning</div>
-        <div class="cao-heading">SMART Goal Frameworks</div>
-        <div class="cao-body">Structured, measurable goal-setting as a discipline applied to my own professional development.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Application</div>
-        <div class="cao-heading">Personal Learning Roadmap</div>
-        <div class="cao-body">Breaking down the career change into specific, achievable targets with timelines rather than vague intentions.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Outcome</div>
-        <div class="cao-heading">Clearer Career Direction</div>
-        <div class="cao-body">A structured progression plan that makes a significant career change feel achievable and measurable.</div>
-      </div>
-    </div>
-    <div class="post-body">
-      <button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
-      <div class="full-text">
-        <p>Among the lessons that have left a long-lasting impression on me, there is the habit of setting goals in a structured form, namely, the application of such frameworks as SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound). This is one concept that I came across in my ICL studies and the concept is fairly simple, but the field of using it in my own growth was something completely unfamiliar.</p>
-        <p>Before my studies, my career planning style was carefree and responsive. My intentions to do more and shift gears were there, but my ambitions were unclear: I want to work in business or I want to learn more about data. As I had to go through the process of stating particular, quantifiable learning objectives, as is needed within this portfolio, this compelled me to be more thoughtful with regard to what I actually want, and what actions will practically bring me there.</p>
-        <p>This change of thought has already come in handy. I have begun to better prioritize my learning time by setting specific goals, like passing a digital marketing certification or learning better how to use Excel to handle data. Instead of believing that there is so much that I do not know, I now have a better road map and progress seems possible.</p>
-        <p>In the future, strategic thinking and goal-setting are competencies that I find to be directly applicable to the kind of jobs I will be seeking. A marketing analyst must establish quantifiable campaign goals; a business analyst must establish quantifiable project outcomes. These are the habits that I am practicing now, as a student, which will lay the groundwork on how I will perform in the future as a professional.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- POST 4 -->
-  <div class="post-card fade-in" id="post4">
-    <div class="post-header">
-      <div class="post-number">0<em>4</em></div>
-      <div class="post-meta">
-        <div class="post-course">ICL 9230 · Contemporary Leadership and Management</div>
-        <div class="post-title">Connecting Academic Theory to Workplace Practice</div>
-        <div class="post-tags"><span class="post-tag">Theory to Practice</span><span class="post-tag">Organisational Behaviour</span><span class="post-tag">Reflective Practice</span></div>
-      </div>
-    </div>
-    <div class="cao-row">
-      <div class="cao-cell">
-        <div class="cao-label">Learning</div>
-        <div class="cao-heading">Reflective Practice</div>
-        <div class="cao-body">Applying management theory as an analytical lens for observing real organisational behaviour.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Application</div>
-        <div class="cao-heading">Café Observation</div>
-        <div class="cao-body">Analysing how management style and culture affect team morale and communication patterns at work.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Outcome</div>
-        <div class="cao-heading">Analytical Habit</div>
-        <div class="cao-body">A lasting habit of theory-to-practice thinking that makes academic learning feel grounded and relevant.</div>
-      </div>
-    </div>
-    <div class="post-body">
-      <button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
-      <div class="full-text">
-        <p>An important lesson of my ICL coursework has been the ability to understand how to make the gap between theoretical and practical aspects of my practice a reality. As a Japanese clinical healthcare graduate, I was conditioned to use evidence-based guidelines, however, the relationship between management science and the daily workplace behaviour seemed less obvious to me when I started my business education.</p>
-        <p>The Leading and Management course did not just want me to learn the theories: the Leading and Management course also made me observe, analyse and consider the real organisational behaviour in the light of the theoretical perspectives. To illustrate, when I was reading about organisational culture and the role of organisational culture in the motivation of employees, I was critically thinking about the cafe where I am employed, how the way the manager communicates with employees affects the morale of the team, how the informal norms affect who is willing to speak up and who is not.</p>
-        <p>This reflection practice has been truly useful. It has made my course work seem real and grounded and not abstract, and has made my day-to-day work more analytically rich. Now I am more attentive in my workplaces and I have to question myself why some dynamics are the way they are, and how they could be better.</p>
-        <p>This skill to relate frameworks to actual situations will be critical as I strive towards a career in marketing or data analysis. Salient data is not in a vacuum; it is crucial to know the human and organisational context in order to interpret it. One such habit, which I have acquired during ICL, is theory-to-practice thinking which I will maintain throughout my career.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- POST 5 -->
-  <div class="post-card fade-in" id="post5">
-    <div class="post-header">
-      <div class="post-number">0<em>5</em></div>
-      <div class="post-meta">
-        <div class="post-course">Personal & Academic Development · International Student Experience</div>
-        <div class="post-title">Building Resilience and Adaptability as an International Student</div>
-        <div class="post-tags"><span class="post-tag">Resilience</span><span class="post-tag">Adaptability</span><span class="post-tag">International Experience</span><span class="post-tag">Growth Mindset</span></div>
-      </div>
-    </div>
-    <div class="cao-row">
-      <div class="cao-cell">
-        <div class="cao-label">Learning</div>
-        <div class="cao-heading">Resilience as a Competency</div>
-        <div class="cao-body">Understanding that adaptability under pressure is a valued professional skill, not just a personal trait.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Application</div>
-        <div class="cao-heading">Reframing Feedback</div>
-        <div class="cao-body">Moving from discomfort with critical feedback to actively seeking it as a tool for growth.</div>
-      </div>
-      <div class="cao-cell">
-        <div class="cao-label">Outcome</div>
-        <div class="cao-heading">Growth Mindset</div>
-        <div class="cao-body">A more confident and adaptive approach to challenge , both in study and in the workplace.</div>
-      </div>
-    </div>
-    <div class="post-body">
-      <button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
-      <div class="full-text">
-        <p>Probably the least obvious, yet, in the end, the least minor one is the fact that being in New Zealand has helped me become more resilient and adaptable in general. Relocating to a foreign country, pursuing my education in a foreign language, being employed in the hospitality industry and at the same time having to cope with the challenges of my academic studies, and dealing with a completely new work environment, culture, and environment: all these factors have forced me to develop a degree of flexibility that I had not expected to have to rely on.</p>
-        <p>As a student of ICL, I have realized that resilience is not only a personal characteristic, but a professional skill. The management literature is increasingly appreciating individuals who are able to cope with uncertainty, who are able to rebound after encountering setbacks and still perform highly when under pressure. This experience has provided me with a rich, hands-on experience of what resilience is in practice.</p>
-        <p>This education has proved handy in several folds. It has also taught me academically to persevere with the challenging tasks and seek assistance when necessary instead of enduring silently, as I would have done in Japan. It is an experience professionally that has provided me with real-life examples that I can use in job applications and interviews to show that I can fit and work in various cultural and work-related situations.</p>
-        <p>One particular example has been in my attitude towards feedback. During my initial years at school, it was awkward to get feedback about my work and the feedback was often negative. Gradually, I have redefined feedback as a means of improvement, and I am now pursuing it. This change of attitude, that is, perceiving challenge as a threat and as a chance, is a shift that I believe is a key to long-term personal success especially as I maneuver through a career change into a new sector.</p>
-      </div>
-    </div>
-  </div>
-
+<!-- POST 1 -->
+<div class="post-card fade-in" id="post1">
+<div class="post-header">
+<div class="post-number">0<em>1</em></div>
+<div class="post-meta">
+<div class="post-course">ICL 9230 · Contemporary Leadership and Management</div>
+<div class="post-title">Understanding Leadership Theories and Their Real-World Application</div>
+<div class="post-tags"><span class="post-tag">Transformational Leadership</span><span class="post-tag">Situational Leadership</span><span class="post-tag">Workplace Practice</span></div>
 </div>
-
+</div>
+<div class="cao-row">
+<div class="cao-cell">
+<div class="cao-label">Learning</div>
+<div class="cao-heading">Leadership Theories</div>
+<div class="cao-body">Transformational & situational leadership frameworks studied in ICL 9230.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Application</div>
+<div class="cao-heading">Café Team Management</div>
+<div class="cao-body">Adjusting leadership style based on team member experience and readiness in day-to-day work.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Outcome</div>
+<div class="cao-heading">Conscious Leadership Skills</div>
+<div class="cao-body">Improved team communication and a deliberate, theory-informed approach to working with others.</div>
+</div>
+</div>
+<div class="post-body">
+<button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
+<div class="full-text">
+<p>What I have learnt probably most from the ICL Leading and Management course is the discussion about the key leadership theories, in particular, transformational and situational leadership. Before this course, I have observed the effect of leadership action for several years (as a physiotherapist in Japan), but I did not have a framework to link my observations as to why some leaders were effective and others not, or why I could change the leadership style.</p>
+<p>We studied how transformational leaders can inspire people by referring to core values and creating a vision that inspires, and how situational leaders can change their style of leadership to the needs and readiness of each team member. This difference spoke to my heart. Looking back, in my clinical career, I would now have a list of the leaders I like and dislike and can understand through these models why certain leadership styles were effective or ineffective in a particular scenario.</p>
+<p>The aspect of this learning that was most useful was that it could be transferred to my current Auckland workplace. Being a cafe worker, I began to apply the situational leadership theories: new staff should be given more directives and structure while experienced staff can be given freedom. I found that this technique improved communication and reduced tensions in the workplace during busy periods.</p>
+<p>I plan to continue to use these theories in the future as I will be involved in business. Understanding leadership from a conceptual level and have the ability to reflect on and modify their own style is important not only for managers but for those who aspire to have a great impact on an organisation. This has shaped my future career aspirations where I will be in the marketing and data analytics industry where in most cases it is required to manage others without having power over them.</p>
+</div>
+</div>
+</div>
+<!-- POST 2 -->
+<div class="post-card fade-in" id="post2">
+<div class="post-header">
+<div class="post-number">0<em>2</em></div>
+<div class="post-meta">
+<div class="post-course">ICL 9230 · Contemporary Leadership and Management</div>
+<div class="post-title">The Importance of Communication in Cross-Cultural Teams</div>
+<div class="post-tags"><span class="post-tag">Cross-cultural Communication</span><span class="post-tag">High/Low Context</span><span class="post-tag">Professional Adaptation</span></div>
+</div>
+</div>
+<div class="cao-row">
+<div class="cao-cell">
+<div class="cao-label">Learning</div>
+<div class="cao-heading">Communication Styles</div>
+<div class="cao-body">High vs. low-context cultural communication models and how they create misunderstanding in diverse teams.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Application</div>
+<div class="cao-heading">NZ Workplace Adaptation</div>
+<div class="cao-body">More direct, explicit communication in English professional settings rather than relying on implicit cues.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Outcome</div>
+<div class="cao-heading">Improved Team Relationships</div>
+<div class="cao-body">Better professional relationships and greater empathy toward colleagues from other cultural backgrounds.</div>
+</div>
+</div>
+<div class="post-body">
+<button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
+<div class="full-text">
+<p>The significance of communication, the cross-cultural communication in particular, in managing a team effectively was another lesson that I learnt from ICL studies. In the Leading and Management class, we discussed how different communication styles, high or low context, direct or indirect communication can lead to miscommunication in various teams.</p>
+<p>For me, this is a very relevant issue as I am a Japanese working and living in New Zealand. I am from a high-context culture, meaning that we speak less and infer much, and was faced with some difficulties with more direct communication styles in New Zealand. This course gave me a framework and a vocabulary to understand these differences not as deficiencies, but rather as different cultural norms that need to be recognised and the gap between them must be closed.</p>
+<p>This learning was helpful at work. I was more careful to express my thoughts, rather than suggesting or keeping silent so as not to cause any trouble, like in the Japanese working style. I also became more tolerant with other colleagues who might be from a different culture and may have the same challenges.</p>
+<p>I think it's a very important skill for my future job. As a data analyst and marketer in New Zealand, I will be working with various teams on a regular basis and will be sharing complex information with the stakeholders with varying levels of technical skills. I am also in the process of building the skill of being able to adapt to different people and this course gave me the conceptual background to achieve that.</p>
+</div>
+</div>
+</div>
+<!-- POST 3 -->
+<div class="post-card fade-in" id="post3">
+<div class="post-header">
+<div class="post-number">0<em>3</em></div>
+<div class="post-meta">
+<div class="post-course">ICL Studies · Academic & Personal Development</div>
+<div class="post-title">Goal-Setting and Strategic Thinking</div>
+<div class="post-tags"><span class="post-tag">SMART Goals</span><span class="post-tag">Career Planning</span><span class="post-tag">Strategic Thinking</span></div>
+</div>
+</div>
+<div class="cao-row">
+<div class="cao-cell">
+<div class="cao-label">Learning</div>
+<div class="cao-heading">SMART Goal Frameworks</div>
+<div class="cao-body">Structured, measurable goal-setting as a discipline applied to my own professional development.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Application</div>
+<div class="cao-heading">Personal Learning Roadmap</div>
+<div class="cao-body">Breaking down the career change into specific, achievable targets with timelines rather than vague intentions.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Outcome</div>
+<div class="cao-heading">Clearer Career Direction</div>
+<div class="cao-body">A structured progression plan that makes a significant career change feel achievable and measurable.</div>
+</div>
+</div>
+<div class="post-body">
+<button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
+<div class="full-text">
+<p>One of the lessons that have stayed with me for a long time is to set my goals in a formalised manner, i.e. use of such concepts as SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound). This is one of the concepts that I learnt during my ICL studies and it is a simple enough concept, but the application of it in my own development was unknown.</p>
+<p>Previously my approach to career planning was laidback and reactive. I had the desire to do more and change direction, but I didn't know what I wanted to do: I want to work in business or I want to learn more about data. As I have had to go through the process of setting specific learning goals (as is required for this portfolio), this has forced me to be more reflective in terms of what I want, and what can be done to get there.</p>
+<p>This shift in mentality has proven to be useful. I now know how to better manage my study time by setting goals, such as working on a digital marketing certification, and how to better use the application Excel to manage data. Rather than being paralysed by the idea that there is so much that I don't know, I now feel like I am on the right path and making progress.</p>
+<p>In my future, strategic planning and goal-setting are skills that I find to be relevant to the jobs that I will be applying for. A marketing analyst has to set clear and measurable objectives for marketing campaigns; a business analyst must set clear and measurable outcomes for a project. These are the skills that I am working on as a student, which will set the stage for how I will work as an employee.</p>
+</div>
+</div>
+</div>
+<!-- POST 4 -->
+<div class="post-card fade-in" id="post4">
+<div class="post-header">
+<div class="post-number">0<em>4</em></div>
+<div class="post-meta">
+<div class="post-course">ICL 9230 · Contemporary Leadership and Management</div>
+<div class="post-title">Connecting Academic Theory to Workplace Practice</div>
+<div class="post-tags"><span class="post-tag">Theory to Practice</span><span class="post-tag">Organisational Behaviour</span><span class="post-tag">Reflective Practice</span></div>
+</div>
+</div>
+<div class="cao-row">
+<div class="cao-cell">
+<div class="cao-label">Learning</div>
+<div class="cao-heading">Reflective Practice</div>
+<div class="cao-body">Applying management theory as an analytical lens for observing real organisational behaviour.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Application</div>
+<div class="cao-heading">Café Observation</div>
+<div class="cao-body">Analysing how management style and culture affect team morale and communication patterns at work.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Outcome</div>
+<div class="cao-heading">Analytical Habit</div>
+<div class="cao-body">A lasting habit of theory-to-practice thinking that makes academic learning feel grounded and relevant.</div>
+</div>
+</div>
+<div class="post-body">
+<button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
+<div class="full-text">
+<p>One key lesson of my ICL course work has been how to make the connections between the theoretical and practical aspects of my practice a reality. I am a Japanese clinical healthcare graduate, and was trained to follow evidence-based practice, but the connection between the science of management and the workplace behaviour was not obvious to me when I started to study business.</p>
+<p>The Leading and Management course did not only want me to learn the theories: the Leading and Management course also made me look at the real organisational practices, observe, and reflect on the organisational practices from the theoretical point of view. For example, when I was reading about the organisational culture, and the impacts of the organisational culture in the motivation of the employees, I was critically reflecting about the cafe where I work: how the manager's communicational style with the employees impacts on the team spirit, how the informal norms of the organisation affect who speaks and who doesn't.</p>
+<p>This reflection exercise has been very valuable. It has made my course work relevant and tangible and not theoretical, and my work more analytical. I am now more observant in my workplaces and I need to ask myself why things are the way they are, and how can they be improved.</p>
+<p>This ability to connect theory with practice will be important in my journey towards marketing or data analytics. Data is never in isolation; it is important to understand the organisational and human context to interpret relevant data. One of these examples, which I have learnt from ICL, is to practice theory-to-practice thinking that I will continue to pursue in my professional life.</p>
+</div>
+</div>
+</div>
+<!-- POST 5 -->
+<div class="post-card fade-in" id="post5">
+<div class="post-header">
+<div class="post-number">0<em>5</em></div>
+<div class="post-meta">
+<div class="post-course">Personal & Academic Development · International Student Experience</div>
+<div class="post-title">Building Resilience and Adaptability as an International Student</div>
+<div class="post-tags"><span class="post-tag">Resilience</span><span class="post-tag">Adaptability</span><span class="post-tag">International Experience</span><span class="post-tag">Growth Mindset</span></div>
+</div>
+</div>
+<div class="cao-row">
+<div class="cao-cell">
+<div class="cao-label">Learning</div>
+<div class="cao-heading">Resilience as a Competency</div>
+<div class="cao-body">Understanding that adaptability under pressure is a valued professional skill, not just a personal trait.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Application</div>
+<div class="cao-heading">Reframing Feedback</div>
+<div class="cao-body">Moving from discomfort with critical feedback to actively seeking it as a tool for growth.</div>
+</div>
+<div class="cao-cell">
+<div class="cao-label">Outcome</div>
+<div class="cao-heading">Growth Mindset</div>
+<div class="cao-body">A more confident and adaptive approach to challenge , both in study and in the workplace.</div>
+</div>
+</div>
+<div class="post-body">
+<button class="toggle-btn" onclick="toggle(this)">+ Read Full Post</button>
+<div class="full-text">
+<p>Perhaps the least apparent, but, ultimately, least insignificant is the fact that being in New Zealand has allowed me to become more resilient and flexible overall. Moving to a new country, studying in a new language, working in the hospitality industry and at the same time having to juggle studying for my degree, and adapting to a new work culture, environment, and country: all these aspects have made me become more flexible than I have ever thought I would be.</p>
+<p>Studying ICL, I have understood that being resilient is not just a personal trait, but also a work skill. The business literature is increasingly recognising the need for individuals who can deal with uncertainty, who are able to bounce back after facing adversity and/or who perform well under pressure. This has been a great opportunity for me to experience resilience in action.</p>
+<p>This education has been useful in a number of ways. It has also been an education academically that has taught me to "stay the course" with the difficult work and ask for help where needed rather than suffer in silence as would be expected in Japan. It is a lesson in a work environment that has also given me anecdotes to use and explain in the work applications and interviews that I can adapt and work in different cultural and work settings.</p>
+<p>One example is, in particular, my attitude to feedback. At the beginning of my schooling it was embarrassing to receive feedback on my work and the feedback was negative. Over time, I have come to see feedback as an opportunity to improve and I am seeking out feedback. This shift in my attitude, that is, seeing the challenge as a threat and opportunity, I believe, is a key to my future success, particularly in the transition into a new career and industry.</p>
+</div>
+</div>
+</div>
+</div>
 <footer>
-  <span>Kei Endo · ICL Professional Portfolio · 2026</span>
-  <div class="footer-right"><a href="cv.html">← CV</a><a href="peer.html">Peer Review →</a></div>
+<span>Kei Endo · ICL Professional Portfolio · 2026</span>
+<div class="footer-right"><a href="cv.html">← CV</a><a href="peer.html">Peer Review →</a></div>
 </footer>
-
 <script>
-  function toggle(btn) {
-    const ft = btn.nextElementSibling;
-    ft.classList.toggle('open');
-    btn.textContent = ft.classList.contains('open') ? '− Collapse Post' : '+ Read Full Post';
-  }
-  const obs=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*80);});},{threshold:0.05});
-  document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+function toggle(btn) {
+const ft = btn.nextElementSibling;
+ft.classList.toggle('open');
+btn.textContent = ft.classList.contains('open') ? '− Collapse Post' : '+ Read Full Post';
+}
+const obs=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*80);});},{threshold:0.05});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 </script>
 </body>
 </html>
